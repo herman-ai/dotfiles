@@ -1,0 +1,36 @@
+export CSCOPE_EDITOR=vim
+
+#. ~/.bash_prompt
+
+#Get the PATH for Propeller
+export PATH=$PATH:~/ws/simulate/obj/bin/
+
+export PATH=$PATH:/net/server1/srv/nfs/herman-data/libpng-install/bin
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/net/server1/srv/nfs/herman-data/ws/halide/bin/:/net/server1/srv/nfs/herman-data/libpng-install/lib/
+
+ulimit -c unlimited
+
+export PATH=$PATH:/sbin/
+export PATH=$PATH:/usr/local/cuda/bin/
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:${LD_LIBRARY_PATH}
+
+export PATH=$PATH:~/ws/softwares/bin/
+
+# Enable tab completion
+source ~/.git-completion.bash
+
+# colors!
+green="\[\033[0;32m\]"
+blue="\[\033[0;34m\]"
+purple="\[\033[0;35m\]"
+turquiose="\[\033[0;36m\]"
+white="\[\033[0;37m\]"
+reset="\[\033[0m\]"
+# Change command prompt
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+export PS1="$purple\u$white@$turquiose\h$green\$(__git_ps1)$blue \w \n$ $reset"
