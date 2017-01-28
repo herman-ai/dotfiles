@@ -10,7 +10,8 @@ fi
 
 # User specific aliases and functions
 . ~/.bash_profile
-if [ "*cerebras.aws" == $(hostname -f) ]; then
+if [[ $(hostname -f) == *"cerebras.aws" ]]; then
+    echo "Configuring for Cerebras"
     . ~/.bash_cerebras
 fi
 
