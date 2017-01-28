@@ -3,6 +3,7 @@ set number
 set bg=dark
 set tabstop=4
 set expandtab
+set shiftwidth=4
 set autoindent
 "call pathogen#helptags()
 "call pathogen#infect()
