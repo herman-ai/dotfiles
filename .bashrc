@@ -16,4 +16,4 @@ fi
 [ -e /usr/share/Modules/modulefiles ] && module unuse /usr/share/Modules/modulefiles
 [ -e /tools/modulefiles ] && module use /tools/modulefiles
 [ -e /opt/modulefiles ]   && module use /opt/modulefiles
-module load common astyle scl
+#module load common astyle scl
