@@ -9,9 +9,14 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-. ~/.bash_profile
+# Have google chrome always use local disk
+alias google-chrome="google-chrome --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
+alias google-chrome-stable="google-chrome-stable --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
+
+# To enable core dump
+# ulimit -c unlimited
+
 if [[ $(hostname -f) == *"cerebras.aws" ]]; then
-    echo "Configuring for Cerebras"
     . ~/.bash_cerebras
 fi
 

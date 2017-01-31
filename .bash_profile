@@ -1,5 +1,12 @@
-export CSCOPE_EDITOR=vim
-# Trigger ~/.bashrc commands
-#. ~/.bashrc    #XXX 
-export PATH=$PATH:$HOME/.local/bin:$HOME/bin
-. ~/.bash_herman
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH

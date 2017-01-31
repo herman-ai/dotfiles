@@ -1,6 +1,15 @@
-echo "Loading modules on Cerebras machine."
+#echo "Loading modules on Cerebras machine."
 . /etc/profile.d/modules.sh
 [ -e /usr/share/Modules/modulefiles ] && module unuse /usr/share/Modules/modulefiles
 [ -e /tools/modulefiles ] && module use /tools/modulefiles
 [ -e /opt/modulefiles ]   && module use /opt/modulefiles
 module load common astyle scl
+
+export PATH=~/bin:$PATH
+export PATH=~/local.rhel/bin:$PATH
+
+# Have google chrome always use local disk
+alias google-chrome="google-chrome --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
+alias google-chrome-stable="google-chrome-stable --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
+
+. ~/.bash_herman
