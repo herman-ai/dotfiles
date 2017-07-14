@@ -6,6 +6,7 @@ set expandtab
 set shiftwidth=4
 set autoindent
 set hlsearch
+set nofoldenable
 "call pathogen#helptags()
 "call pathogen#infect()
 set hidden
