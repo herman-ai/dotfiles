@@ -3,7 +3,7 @@
 [ -e /usr/share/Modules/modulefiles ] && module unuse /usr/share/Modules/modulefiles
 [ -e /tools/modulefiles ] && module use /tools/modulefiles
 [ -e /opt/modulefiles ]   && module use /opt/modulefiles
-module load common astyle scl
+module load common astyle scl vim
 
 export PATH=~/bin:$PATH
 export PATH=~/local.rhel/bin:$PATH
@@ -22,4 +22,10 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/net/server1/srv/nfs/herman-data/ws/hali
 # Have google chrome always use local disk
 alias google-chrome="google-chrome --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
 alias google-chrome-stable="google-chrome-stable --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
+### BEGIN cerebras bashrc setup ###
+#
+global_bashrc="/cb/user_env/bashrc-2017-0713"
+[ -r "$global_bashrc" ] && . "$global_bashrc"
 
+#### END cerebras bashrc setup ###
+alias python="python3"
