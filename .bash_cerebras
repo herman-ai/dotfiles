@@ -7,9 +7,19 @@ module load common astyle scl
 
 export PATH=~/bin:$PATH
 export PATH=~/local.rhel/bin:$PATH
+export PATH=$PATH:~/ws/simulate/obj/bin/
+
+export PATH=$PATH:/net/server1/srv/nfs/herman-data/libpng-install/bin
+
+export PATH=$PATH:/sbin/
+export PATH=$PATH:/usr/local/cuda/bin/
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:${LD_LIBRARY_PATH}
+
+export PATH=$PATH:~/ws/softwares/bin/
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/net/server1/srv/nfs/herman-data/ws/halide/bin/:/net/server1/srv/nfs/herman-data/libpng-install/lib/
 
 # Have google chrome always use local disk
 alias google-chrome="google-chrome --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
 alias google-chrome-stable="google-chrome-stable --user-data-dir=/net/`hostname -s`/mnt/localdata/$USER/.config/google-chrome"
 
-. ~/.bash_herman

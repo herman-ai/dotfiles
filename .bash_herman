@@ -3,19 +3,8 @@ export CSCOPE_EDITOR=vim
 #. ~/.bash_prompt
 
 #Get the PATH for Propeller
-export PATH=$PATH:~/ws/simulate/obj/bin/
-
-export PATH=$PATH:/net/server1/srv/nfs/herman-data/libpng-install/bin
-
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/net/server1/srv/nfs/herman-data/ws/halide/bin/:/net/server1/srv/nfs/herman-data/libpng-install/lib/
 
 ulimit -c unlimited
-
-export PATH=$PATH:/sbin/
-export PATH=$PATH:/usr/local/cuda/bin/
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:${LD_LIBRARY_PATH}
-
-export PATH=$PATH:~/ws/softwares/bin/
 
 # Enable tab completion
 source ~/.git-completion.bash

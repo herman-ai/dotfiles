@@ -19,4 +19,5 @@ alias google-chrome-stable="google-chrome-stable --user-data-dir=/net/`hostname 
 if [[ $(hostname -f) == *"cerebras.aws" ]]; then
     . ~/.bash_cerebras
 fi
+. ~/.bash_herman
 
