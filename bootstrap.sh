@@ -25,4 +25,5 @@ for file in $files; do
     ln -s $dir/$file ~/$file
     echo "...done"
 done
+./vimsetup.sh
 source ~/.bashrc
