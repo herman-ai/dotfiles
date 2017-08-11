@@ -10,11 +10,12 @@ ulimit -c unlimited
 source ~/.git-completion.bash
 
 # colors!
-green="\[\033[0;32m\]"
-blue="\[\033[0;34m\]"
-purple="\[\033[0;35m\]"
-turquiose="\[\033[0;36m\]"
-white="\[\033[0;37m\]"
+green="\[\033[3;32m\]"
+blue="\[\033[3;34m\]"
+purple="\[\033[3;35m\]"
+turquiose="\[\033[3;36m\]"
+white="\[\033[3;37m\]"
+white0="\[\033[0;37m\]"
 reset="\[\033[0m\]"
 # Change command prompt
 source ~/.git-prompt.sh
@@ -22,4 +23,4 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-export PS1="$purple\u$white@$turquiose\h$green\$(__git_ps1)$blue \w \n$ $reset"
+export PS1="$white\u$white@$white\h$green\$(__git_ps1)$blue \w \n$white0$ $reset"
