@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -e
 ########## Variables
 
 dir=$(pwd)                   # dotfiles directory

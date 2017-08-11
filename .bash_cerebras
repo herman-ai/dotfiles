@@ -1,9 +1,9 @@
 #echo "Loading modules on Cerebras machine."
-. /etc/profile.d/modules.sh
+[ -e /etc/profile.d/modules.sh ] &&  . /etc/profile.d/modules.sh
 [ -e /usr/share/Modules/modulefiles ] && module unuse /usr/share/Modules/modulefiles
 [ -e /tools/modulefiles ] && module use /tools/modulefiles
 [ -e /opt/modulefiles ]   && module use /opt/modulefiles
-module load common astyle scl vim
+[ -e module ] && module load common astyle scl vim
 
 export PATH=~/bin:$PATH
 export PATH=~/local.rhel/bin:$PATH
