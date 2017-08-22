@@ -29,3 +29,4 @@ global_bashrc="/cb/user_env/bashrc-2017-0713"
 
 #### END cerebras bashrc setup ###
 alias python="python3"
+export PATH=$PATH:/cb/home/herman/caffe/build/tools
