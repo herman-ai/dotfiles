@@ -18,7 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git@github.com:ntpeters/vim-better-whitespace.git'
-Plugin 'git@github.com:davidhalter/jedi-vim.git'
 "Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
@@ -67,13 +66,4 @@ if has("autocmd")
     \   exe "normal! g`\"" |
     \ endif
 endif
-
-
-let g:jedi#goto_command = "<leader>d"
-let g:jedi#goto_assignments_command = "<leader>g"
-let g:jedi#goto_definitions_command = ""
-let g:jedi#documentation_command = "K"
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#rename_command = "<leader>r"
 
