@@ -9,6 +9,12 @@ files=".gdbinit .bashrc .vimrc .bash_profile .bash_herman .bash_cerebras .git-co
 
 ##########
 
+# if [ ! -d ~/.vim/bundle/Vundle.vim ]
+# then
+#     echo "Cloning Vundle"
+#     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# fi
+
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
 mkdir -p $olddir
@@ -28,8 +34,10 @@ for file in $files; do
 	    mv ~/$file ~/dotfiles_old/
     fi
     echo "Creating symlink to $file in home directory."
+    echo "ln -s $dir/$file ~/$file"
     ln -s $dir/$file ~/$file
     echo "...done"
 done
+
 ./vimsetup.sh
 source ~/.bashrc
