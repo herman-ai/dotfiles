@@ -11,3 +11,4 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 export PATH
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/local_home/ag46761/local/bin:$PATH"
