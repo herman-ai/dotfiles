@@ -11,7 +11,7 @@ source ~/.git-completion.bash
 
 # colors!
 green="\[\033[3;32m\]"
-blue="\[\033[3;34m\]"
+blue="\[\033[0;36m\]"
 purple="\[\033[3;35m\]"
 turquiose="\[\033[3;36m\]"
 white="\[\033[3;37m\]"
